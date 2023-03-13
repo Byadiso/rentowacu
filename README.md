@@ -17,7 +17,7 @@
 
 # PROJECT OVERVIEW
 
-**rentowacu**is a app to which connect tenant and landlords. Tenant can rent properties, landlord can post available properties to rent, etc... It was built with javascript, node, HTML ,mongoDB and CSS.
+**rentowacu** is a app which connect tenants and landlords. Tenants can rent properties, landlords can post available properties to rent, etc... It was built with javascript, node, HTML ,mongoDB and CSS.
 
 -   The user interface link : https://byadiso.github.io/rentowacu/
 -   Live app is hosted on heroku : https://rentowacu.herokuapp.com
@@ -27,14 +27,13 @@
 -   user can Sign in
 -   user can login
 -   user can view
--   user can view specific transaction
--   user can view user expenses
--   user can delete user expenses
--   user can view user income
--   user can delete his income
+-   user can view specific rent offer
+-   user can view user property
+-   user can delete his property
+-   user can view his property
+-   user can delete his property
 -   user can do his history
 -   user can modify his input
-    t
 
 # DEMO
 
@@ -59,11 +58,11 @@
 
 ## API End Points
 
--   GET /api/v1/expenses \_Get all expenses
--   POST/api/v1/expenses \_Create expenses
--   PUT/api/v1/expense \_Update expense
--   DELETE/api/v1/expense \_Delete expense
--   GET /api/v1/incomes \_Get all incomes
+-   GET /api/v1/properties \_Get all properties
+-   POST/api/v1/properties \_Create expenses
+-   PUT/api/v1/property \_Update property
+-   DELETE/api/v1/property \_Delete property
+-   GET /api/v1/users \_Get all users
 -   POST/api/v1/income \_Create income
 -   PUT/api/v1/income \_Update income
 -   DELETE/api/v1/income \_Delete income
@@ -75,19 +74,19 @@
 
 Everything work perfect , However :
 
--   I am still working on styling css and different features are still in process
+-   I am still working, different features are still in process
 
 # Installation
 
--   \$ git clone https://github.com/Byadiso/savingamwa.git
--   \$ cd UI
--   \$ npm i, to install depencies
--   \$ npm start ,to start the server
+-   \$ git clone https://github.com/Byadiso/rentowacu.git
+-   \$ cd rentowacu-main
+-   \$ npm i, to install dependancies.
+-   \$ npm start ,to start the server.
 
 # Contributing
 
--   Fell free to fork this repository
--   Make contribution
+-   Fell free to fork this repository.
+-   Make contribution.
 
 # Licensing
 
