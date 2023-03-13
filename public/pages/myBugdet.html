@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../css/style-money.css"
+        />
+        <!-- <link rel="stylesheet" href="../css/style.css"> -->
+        <title> Savingamwa</title>
+        <link rel="icon" type="image/ico" href="../image/bar-icon.png" />
+        <script type="module" src="../js/script.js" defer></script>
+        <script type="module" src="../js/sorting.js" defer></script>
+        <script src="../js/search.js" defer></script>
+        
+        <!-- <script src="../js/categories.js" defer></script> -->
+
+        <!-- for fonts -->
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+        />
+    </head>
+    <body>
+        <a class="sell" href="http://localhost:3000/public/pages/property.html"
+            ><img src="../image/header.png" height="80px" width="200px"
+        /></a>
+
+        <div class="topnav">
+               <a href="sell.html">
+                   <strong><span class="admin_createPro">Add money</span></strong></a>
+            
+            <a href="./user.html"><strong>My Dashboard</strong></a>
+
+            <div class="login-container">
+                <form action="post">
+                    <a class="cart-btn" href="./cart.html">
+                        <span class="nav-icon">                                                 
+                            <i class="fas fa-history"></i>                            
+                        </span>
+                    </a>
+                    <a class="cart-btn" href="./cart.html">
+                        <span class="nav-icon">                                                 
+                            <i class="fas fa-user-circle"></i>
+                          
+                        </span>
+                    </a>
+                   
+
+                    <a class="log-out" href="#"><strong>Sign Out </strong></a>
+                 
+                </form>
+            </div>
+        </div>
+    
+        <div class="header-menu">
+            <p id="header-text">My Bugdet </p>
+        </div>
+        
+        <div class="filters">
+            <div class="filterCheck"></div>
+            <form class="searchBar" id="input_search">
+                <input
+                    type="text"
+                    name="search"
+                    id="searchBar"
+                    class="input_search"
+                    placeholder="search for a propery"
+                />
+                <button class="btnSearch">search</button>
+            </form>
+        </div>
+
+        <!-- Searched products -->
+        <div class="search_container">
+            <div>
+                <h2 class="search_title"></h2>
+            </div>
+            <div id="searched_content"></div>
+        </div>
+        <!--
+                I want to put my data here from my backend                
+                -->
+
+        <div class="main_properties">
+
+            <div class="wallet_details"> 
+                <h5 class="savings">My Savings <span id="savings">500PLN</span></h5>
+                <h5 class="incomes">My Income <span id="incomes">500PLN</span></h5>
+                <h5 class="expense">My Expenses <span id="expenses">500PLN</span></h5>
+            </div>
+
+            <div id="myMoneys">
+                
+                <div class="saving_card">                    
+                    <h3 class="saving">My Wallet <span id="saving"></span></h3>
+                </div>
+
+            </div>      
+            
+           
+
+        </div>
+
+       
+
+        
+
+        <!--  implementation of loading spin  -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
+
+        <div id="footer">
+            &copy; 2021 Designed by BYAMUNGU desire || Savingamwa.rw
+        </div>
+    </body>
+
+    <script defer>
+        let user = JSON.parse(localStorage.getItem('user'));      
+        if (user == null) {
+            window.location.href = './login.html'
+        }
+
+         // cart logic
+        if (typeof window !== 'undefined') {
+        if (localStorage.getItem('cart')) {            
+            let storedInCarrt = JSON.parse(localStorage.getItem('cart'))
+            let cart = document.querySelectorAll(".cart-items")[0];
+            cart.textContent = storedInCarrt.length
+        }
+
+    }
+       
+    </script>
+</html>
