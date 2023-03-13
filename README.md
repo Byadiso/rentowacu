@@ -17,7 +17,7 @@
 
 # PROJECT OVERVIEW
 
-**rentowacu** is a app which connect tenants and landlords. Tenants can rent properties, landlords can post available properties to rent, etc... It was built with javascript, node, HTML ,mongoDB and CSS.
+**rentowacu** is an app which connect tenants and landlords. Tenants can rent properties, landlords can post available properties to rent, etc... It was built with javascript, node, HTML ,mongoDB and CSS.
 
 -   The user interface link : https://byadiso.github.io/rentowacu/
 -   Live app is hosted on heroku : https://rentowacu.herokuapp.com
