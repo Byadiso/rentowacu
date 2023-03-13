@@ -17,10 +17,10 @@
 
 # PROJECT OVERVIEW
 
-**savingamwa**is a ap to track your expenses and income, you can create and/or search your expenses or income. It was built from using javascript, node, HTML , and CSS.
+**rentowacu**is a app to which connect tenant and landlords. Tenant can rent properties, landlord can post available properties to rent, etc... It was built with javascript, node, HTML ,mongoDB and CSS.
 
--   The user interface link : https://byadiso.github.io/savingamwa/
--   Live app is hosted on heroku : https://savingamwa.herokuapp.com
+-   The user interface link : https://byadiso.github.io/rentowacu/
+-   Live app is hosted on heroku : https://rentowacu.herokuapp.com
 
 # FEATURES
 
