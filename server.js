@@ -29,8 +29,8 @@ app.use((req, res, next) => {
 //db
 mongoose
     .connect(
-        process.env.MONGODB_URI ||
-            'mongodb+srv://byadiso:Uwineza3010@cluster0.kbaby.mongodb.net/kodesha?retryWrites=true&w=majority',
+        process.env.MONGODB_URI,
+
         {
             useNewUrlParser: true,
             useCreateIndex: true,
@@ -90,7 +90,8 @@ app.get('/', (_req, res) => {
     res.sendFile(path.join(__dirname + '/public/index.html'))
     res.status(200).json({
         status: 200,
-        message: 'Welcome to PropertyPro-Lite you can sale or rent your needs!',
+        message:
+            'Welcome to Rentowacu you can sale or rent your house or apartment!',
     })
 })
 
@@ -112,8 +113,6 @@ app.get('/', function (req, res) {
     return res.redirect('/index.html')
 })
 
-// for render sign-up
-
 // for render login
 app.get('/login', function (req, res) {
     res.set({
@@ -128,7 +127,7 @@ app.get('/index', (_req, res) => {
         .json({
             status: 200,
             message:
-                'Welcome to PropertyPro-Lite you can sale or rent your needs!',
+                'Welcome to rentowacu you can sale or rent your house or apartment!',
         })
 })
 
