@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <title>Rentowacu.rw</title>
+        <link rel="icon" type="image/ico" href="./image/bar-icon.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <a class="sell" href="./pages/sell.html"
+            ><img src="./image/header.png" height="80px" width="200px"
+        /></a>
+
+        <div class="topnav">
+            <div class="logo">
+                <h1>Rentowacu.rw</h1>
+            </div>
+            <div class="nav-menu">
+                <a class="active" href="./index.html"><strong>HOME</strong></a>
+                <a href="./tenant.html"><strong>Tenant</strong></a>
+                <a href="./owner.html"><strong>Property Owner</strong></a>
+                <a href="./agent.html"
+                    ><strong>Create a search agent</strong></a
+                >
+                <a href="./profile.html"><strong>My profile</strong></a>
+                <a href="./logout.html"><strong>Log out</strong></a>
+                <a href="./announcement.html"
+                    ><strong>Add announcement</strong></a
+                >
+                <a href="./search.html"><strong>Search real estate</strong></a>
+                <a href="./language.html"><strong>EN</strong></a>
+            </div>
+        </div>
+
+        <div class="my_profile">
+            <div class="my_profile_menu">
+                <h1 class="menu_profile" id="profile">My Profile</h1>
+                <h1 class="menu_profile" id="membership">My MemberShip</h1>
+                <h1 class="menu_profile" id="ads">My Ads</h1>
+                <h1 class="menu_profile" id="inbox">Inbox</h1>
+            </div>
+            <div class="profile_details"></div>
+            <div class="membership_details"></div>
+            <div class="ads_details"></div>
+            <div class="inbox_details"></div>
+        </div>
+
+        <br />
+        <div class="menu-footer">
+            <div class="menu-footer-content about_us">
+                <ul>
+                    <li>About us</li>
+                    <li>Statute</li>
+                    <li>Blog</li>
+                    <li>buy premium profile</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="menu-footer-content for_tenants">
+                <ul>
+                    <li>Search for property to rent</li>
+                    <li>Create a search agent</li>
+                    <li>Help :get answers to your questions here</li>
+                </ul>
+            </div>
+            <div class="menu-footer-content for_owners">
+                <ul>
+                    <li>Create a real state ad</li>
+                    <li>Cooperation for rental portals</li>
+                    <li>Cooperation for landlords</li>
+                </ul>
+            </div>
+            <div class="menu-footer-content social_media">
+                <ul>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                    <li>TikTok</li>
+                </ul>
+            </div>
+            <div class="menu-footer-content action_button">
+                <button class="search_button">Search</button>
+                <button class="search_button">KINYA</button>
+            </div>
+        </div>
+
+        <div id="footer">
+            &copy; <span class="current-year">2023</span>Designed by BYAMUNGU
+            desire || Rentowacu.rw
+        </div>
+    </body>
+
+    <script>
+        // not showing if user is still logged in
+        let user = JSON.parse(localStorage.getItem('user'))
+        console.log(user)
+        if (user) {
+            window.location.href = '../pages/user.html'
+        }
+
+        // Real time footer
+    </script>
+</html>
