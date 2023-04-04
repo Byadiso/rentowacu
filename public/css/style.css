@@ -135,6 +135,8 @@ a {
 .home_hero {
   background-color: white;
   font-size: 13px;
+  background-image: url("../image/kigali.jpg");
+  padding-bottom: 30px;
 }
 
 .home_hero .intro {
@@ -145,33 +147,84 @@ a {
   padding: 15px;
 }
 
-.hero_section {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
 
-}
 
 .search {
-  background-color: rgba(0, 0, 0, 0.397);
+  background-color: rgba(0, 0, 0, 0.596);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../image/nganatech.jpg");
-  padding: 75px;
+  margin: 100px;
 }
 
+/* for search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+button[type="submit"] {
+  border: none;
+  background: rgb(68, 149, 248);
+  color: white;
+  cursor: pointer;
+  padding: 13px 25px;
+
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(16, 83, 165);
+}
+
+.fa-search {
+  font-size: 50px;
+  padding: 10px;
+  color: grey;
+}
+
+
+
+
+.search input {
+  width: 400px;
+  padding: 10px;
+}
+
+
+.popular_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popular_search ul {
+  padding-bottom: 20px;
+}
 
 .show_case {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #c75050;
+  background-color: #e14c4c;
   color: white;
-  padding: 10px;
+  padding: 30px;
   font-size: 13px;
 
 }
@@ -189,23 +242,35 @@ a {
   flex-direction: column;
   padding: 10px;
   font-size: 13px;
+  background-color: rgb(239, 240, 242);
 }
 
 .main .main_title {
   flex: 1;
+
+}
+
+.main .main_title h3 {
+  color: grey;
+  align-items: center;
 }
 
 .main_cities {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  padding: 30px;
+  padding-bottom: 30px;
+
+
 }
 
 .cities_content {
   display: flex;
   padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
+  background-color: #fff;
 }
 
 .cities_content .city_image, .city_description {
@@ -410,14 +475,14 @@ for advert  */
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: rgb(245, 100, 42);
+  background-color: #e14c4c;
   color: white;
   padding: 30px;
   margin: 0;
 }
 
 .want_rent input {
-  background-color: rgb(52, 218, 77);
+  background-color: green;
   color: white;
   border: none;
   text-align: center;
@@ -460,7 +525,7 @@ for advert  */
 }
 
 .menu_footer_content .search_button {
-  background-color: rgb(52, 218, 77);
+  background-color: green;
   color: white;
   border: none;
   text-align: center;
