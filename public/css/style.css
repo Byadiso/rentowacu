@@ -35,16 +35,20 @@ header {
   background-color: #ffffff;
   padding: 5px 10px;
   font-size: 13px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(139, 139, 139);
 
 }
 
 .logo-section {
   flex: 1.5;
+  display: flex;
+  color: #e14c4c;
+
 }
 
 .logo-section img {
-  max-height: 50px;
+  max-height: 65px;
+  padding-right: 10px;
 }
 
 .main-nav {
@@ -129,7 +133,9 @@ a {
   font-weight: 200;
 }
 
-
+/* .intro .total, .price, .customer {
+  font-weight: 700px;
+} */
 
 /* -------------Home_hero----------------------------- */
 .home_hero {
@@ -144,7 +150,7 @@ a {
   background-color: white;
   flex-direction: row;
   justify-content: center;
-  padding: 15px;
+  padding-top: 30px;
 }
 
 
