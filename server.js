@@ -30,7 +30,6 @@ app.use((req, res, next) => {
 mongoose
     .connect(
         process.env.MONGODB_URI,
-
         {
             useNewUrlParser: true,
             useCreateIndex: true,
