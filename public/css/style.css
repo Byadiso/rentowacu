@@ -257,9 +257,6 @@ for advert  */
   flex: 1;
 }
 
-/* .fa {
-    width: 100px;
-  } */
 
 .why_advert .why_content, .why_image {
   flex: 1;
@@ -268,22 +265,231 @@ for advert  */
   padding: 20px;
 }
 
+.call_action_button input {
+  background-color: green;
+  color: white;
+  border: none;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* blog post */
 .blog_post {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  flex-direction: column; */
+  flex-direction: column;
+  background-color: rgb(246, 245, 245);
 }
 
 .blog_post_header {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  flex-direction: column; */
+  flex-direction: column;
+  align-items: center;
 }
 
 .blog_post_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+}
+
+.grid-item {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.grid-item h4 {
+  color: #656161;
+  text-align: start;
+}
+
+.grid-item p {
+  text-align: start;
+}
+
+.grid-item input {
+  text-decoration: none;
+  background-color: white;
+  color: red;
+  border: none;
+  text-align: start;
+}
+
+.read_blogs_button {
   display: flex;
   justify-content: center;
+}
+
+.read_blogs_button input {
+  background-color: green;
+  color: white;
+  border: none;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.read_blogs_button input:hover {
+  cursor: pointer;
+}
+
+.search_agent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search_agent input {
+  background-color: rgb(52, 156, 252);
+  color: white;
+  border: none;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search_other_cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.other_search {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.single_search {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single_search ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+
+.single_search h2 {
+  color: rgb(59, 58, 58);
+}
+
+
+.single_search ul {
+  color: rgb(49, 106, 159);
+}
+
+
+.single_search ul:hover {
+  color: rgb(31, 64, 95);
+  cursor: pointer;
+}
+
+
+.want_rent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  padding: 20px;
+  background-color: rgb(245, 100, 42);
+  color: white;
+  padding: 30px;
+  margin: 0;
+}
+
+.want_rent input {
+  background-color: rgb(52, 218, 77);
+  color: white;
+  border: none;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  margin-left: 200px;
+  border-radius: 5px;
+  align-items: end;
+}
+
+
+/* for foooter */
+
+.menu_footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  background-color: #052c47;
+  color: white;
+  padding: 50px;
+  margin: 0;
+}
+
+
+.menu_footer_content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #052c47;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.menu_footer_content ul li, #footer {
+  color: #9fa6ab;
+  align-items: center;
+
+}
+
+.menu_footer_content .search_button {
+  background-color: rgb(52, 218, 77);
+  color: white;
+  border: none;
+  text-align: center;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  margin-left: 200px;
+  border-radius: 5px;
+  align-items: end;
+}
+
+.menu_footer_content .language_button {
+  background-color: rgba(52, 218, 77, 0);
+  color: white;
+  border: 1px solid #9fa6ab;
+  text-align: center;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  margin-left: 200px;
+  border-radius: 5px;
+  align-items: end;
+}
+
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #052c47;
 }
