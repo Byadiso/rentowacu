@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/rent.css" />
         <title>Rentowacu.rw</title>
         <link rel="icon" type="image/ico" href="./image/bar-icon.png" />
         <link
@@ -47,7 +48,7 @@
             </nav>
 
             <div class="button-section">
-                <button>Add announcement</button>
+                <button>Add listing</button>
                 <button id="real_estate">Search real estate</button>
                 <button>EN</button>
             </div>
@@ -55,22 +56,69 @@
 
         <div class="search_rent">
             <div class="location">
-                <h2>
+                <p>
                     <span>+ 28 119</span> houses for rent • Price comparison •
                     Customer service 10.00-16.00
-                </h2>
+                </p>
             </div>
-            <div class="type"></div>
-            <div class="total_rent_price"></div>
-            <div class="bedrooms"></div>
+            <div class="header_rent">
+                <div class="search-box">
+                    <p for="Location">Location</p>
+                    <input
+                        type="text"
+                        placeholder="Zip code, city or area..."
+                    />
+                </div>
+                <div class="dropdown type">
+                    <button class="dropbtn">All</button>
+                    <div class="dropdown-content">
+                        <a href="#">House</a>
+                        <a href="#">Apartment</a>
+                        <a href="#">Room</a>
+                        <a href="#">Student Apartment</a>
+                    </div>
+                </div>
+                <div class="total_rent_price">
+                    <label for="price-slider">Total rent</label>
+                    <input
+                        type="range"
+                        id="price-slider"
+                        name="price-slider"
+                        min="0 "
+                        max="210000"
+                        value="1000"
+                    />
+                    <div class="range_handle">
+                        <p class="initial">0 Frw</p>
+                        <p class="final"><span id="price-value"></span>Frw</p>
+                    </div>
+                </div>
+                <div class="bedrooms">
+                    <label for="bedroom-slider">Bedrooms</label>
+                    <input
+                        type="range"
+                        id="bedroom-slider"
+                        name="bedroom-slider"
+                        min="1"
+                        max="8"
+                        value="8"
+                    />
+                    <div class="range_handle">
+                        <p class="initial_bed">0</p>
+                        <p class="final_bed">
+                            <span id="bedroom-value"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="main">
             <div class="text-intro">
-                <h1>
+                <h2>
                     Houses for rent in Rwanda - see all available houses for
                     rent in Rwanda here
-                </h1>
+                </h2>
             </div>
 
             <div class="main_rents">
@@ -230,6 +278,7 @@
         </div>
     </body>
 
+    <script src="../js/rent.js" defer></script>
     <script>
         // not showing if user is still logged in
         let user = JSON.parse(localStorage.getItem('user'))

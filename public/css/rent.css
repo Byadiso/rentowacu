@@ -1,0 +1,195 @@
+:root {
+  --blueColor: #1e90ff;
+  --whiteColor: #ffffff;
+  --spacing: 4px;
+  --redColor: #e14c4c;
+  --greenColor: green;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+.location {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_rent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.search-box p {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* for range price */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--redColor);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--redColor);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range_handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.initial {
+  align-items: start;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.final {
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.total_rent_price {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* for range bedroom */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--redColor);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--redColor);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range_handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.initial_bed {
+  align-items: start;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.final_bed {
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.bedrooms {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+/* for dropdown for type */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
