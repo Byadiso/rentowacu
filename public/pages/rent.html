@@ -62,65 +62,86 @@
                 </p>
             </div>
             <div class="header_rent">
-                <div class="search-box">
-                    <p for="Location">Location</p>
-                    <input
-                        type="text"
-                        placeholder="Zip code, city or area..."
-                    />
-                </div>
-                <div class="dropdown type">
-                    <button class="dropbtn">All</button>
-                    <div class="dropdown-content">
-                        <a href="#">House</a>
-                        <a href="#">Apartment</a>
-                        <a href="#">Room</a>
-                        <a href="#">Student Apartment</a>
+                <div class="main_header">
+                    <div class="search-box">
+                        <p for="Location">Location</p>
+                        <input
+                            type="text"
+                            placeholder="Zip code, city or area..."
+                        />
+                    </div>
+                    <div class="dropdown type">
+                        <p>Type</p>
+                        <button class="dropbtn">All</button>
+                        <div class="dropdown-content">
+                            <a href="#">House</a>
+                            <a href="#">Apartment</a>
+                            <a href="#">Room</a>
+                            <a href="#">Student Apartment</a>
+                        </div>
+                    </div>
+                    <div class="total_rent_price">
+                        <label for="price-slider">Total rent</label>
+                        <input
+                            type="range"
+                            id="price-slider"
+                            name="price-slider"
+                            min="0 "
+                            max="210000"
+                            value="1000"
+                        />
+                        <div class="range_handle">
+                            <p class="initial">0 Frw</p>
+                            <p class="final">
+                                <span id="price-value"></span>Frw
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bedrooms">
+                        <label for="bedroom-slider">Bedrooms</label>
+                        <input
+                            type="range"
+                            id="bedroom-slider"
+                            name="bedroom-slider"
+                            min="1"
+                            max="8"
+                            value="8"
+                        />
+                        <div class="range_handle">
+                            <p class="initial_bed">0</p>
+                            <p class="final_bed">
+                                <span id="bedroom-value"></span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="total_rent_price">
-                    <label for="price-slider">Total rent</label>
+
+                <div class="create_search_agent">
+                    <p>
+                        SearchAgent - completely free: Receive emails when homes
+                        matching your requirements get listed
+                    </p>
                     <input
-                        type="range"
-                        id="price-slider"
-                        name="price-slider"
-                        min="0 "
-                        max="210000"
-                        value="1000"
+                        type="checkbox"
+                        name="createSearchAgent"
+                        id="checkboxAgent"
                     />
-                    <div class="range_handle">
-                        <p class="initial">0 Frw</p>
-                        <p class="final"><span id="price-value"></span>Frw</p>
-                    </div>
                 </div>
-                <div class="bedrooms">
-                    <label for="bedroom-slider">Bedrooms</label>
-                    <input
-                        type="range"
-                        id="bedroom-slider"
-                        name="bedroom-slider"
-                        min="1"
-                        max="8"
-                        value="8"
-                    />
-                    <div class="range_handle">
-                        <p class="initial_bed">0</p>
-                        <p class="final_bed">
-                            <span id="bedroom-value"></span>
-                        </p>
-                    </div>
-                </div>
+            </div>
+            <div class="create_search_agent">
+                <p>
+                    SearchAgent - completely free: Receive emails when homes
+                    matching your requirements get listed
+                </p>
+                <input
+                    type="checkbox"
+                    name="createSearchAgent"
+                    id="checkboxAgent"
+                />
             </div>
         </div>
 
         <div class="main">
-            <div class="text-intro">
-                <h2>
-                    Houses for rent in Rwanda - see all available houses for
-                    rent in Rwanda here
-                </h2>
-            </div>
-
             <div class="main_rents">
                 <div class="city-image">
                     <img src="./image/apartment1.png" style="width: 100%" />
