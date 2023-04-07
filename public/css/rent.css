@@ -62,7 +62,6 @@
   justify-content: space-between;
   background-color: #ffffff;
   width: 100%;
-
   padding: 5px 10px;
   padding-left: 20px;
 
@@ -189,21 +188,27 @@ input[type="range"]::-moz-range-thumb {
 .create_search_agent {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
   width: 100%;
   background-color: var(--blueColor);
   color: var(--whiteColor);
 }
 
-/* for dropdown for type */
+.create_search_agent p, input {
+  padding-right: 250px;
+}
 
+.create_search_agent {
+  padding: 10px;
+}
+
+
+/* for dropdown for type */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
-
 
 .dropbtn {
   display: flex;
@@ -233,4 +238,97 @@ input[type="range"]::-moz-range-thumb {
 
 .dropdown.active .dropdown-content {
   display: block;
+}
+
+
+
+/* for main rent advert */
+.main_title_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 100px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+}
+
+.total_rentals {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.main_rents {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.main_rents h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.main_rents p {
+  margin-bottom: 10px;
+}
+
+.main_rents span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 
+.rent-image img {
+  position: relative;
+  display: inline-block;
+} */
+
+/* .rent-image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+
+.location_rent {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.783);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rent-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
 }
