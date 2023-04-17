@@ -149,10 +149,18 @@
                     <!-- adding carousel elements -->
 
                     <div class="carousel-wrapper">
-                        <span id="item-1"></span>
-                        <span id="item-2"></span>
-                        <span id="item-3"></span>
-                        <div class="carousel-item item-1">
+                        <div class="main_slider">
+                            <div class="slider">
+                                <img src="../image/kigali.jpg" alt="image" />
+                                <div class="btn">
+                                    <button onclick="back()">
+                                        <i class="bx bx-chevron-left"></i>
+                                    </button>
+                                    <button onclick="next()">
+                                        <i class="bx bx-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
                             <a href="#item-3" class="arrow-prev arrow"></a>
                             <a href="#item-2" class="arrow-next arrow"></a>
                         </div>
@@ -423,5 +431,36 @@
         }
 
         // Real time footer
+
+        // code for slider image
+
+        var mainimg = document.querySelector('img')
+        var images = [
+            '../images/kigali.jpg',
+            '../images/kigali_serena.jpg',
+            '../images/lake kivu.jpg',
+        ]
+
+        var num = 0
+
+        function back() {
+            num--
+            if (num > 0) {
+                num = images.length - 1
+                mainimg.src = images[num]
+            } else {
+                mainimg.src = images[num]
+            }
+        }
+
+        function next() {
+            num++
+            if (num >= images.length) {
+                num = 0
+                mainimg.src = images[num]
+            } else {
+                mainimg.src = images[num]
+            }
+        }
     </script>
 </html>
