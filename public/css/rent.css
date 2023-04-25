@@ -274,10 +274,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .main_rents {
-  padding: 20px;
+  padding: 0px;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-
+  border-radius: 5px
 }
 
 .main_rents h3 {
@@ -286,25 +286,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .main_rents p {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .main_rents span {
   font-size: 24px;
   font-weight: bold;
 }
-
-/* 
-.rent-image img {
-  position: relative;
-  display: inline-block;
-} */
-
-/* .rent-image {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
 
 
 .location_rent {
@@ -382,4 +370,36 @@ input[type="range"]::-moz-range-thumb {
 
 .btn button:hover i {
   color: #95a5a6;
+}
+
+.rent_details p, span {
+  padding: 5px;
+
+}
+
+.price_rent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.price_amount {
+  background-color: rgb(0, 110, 255);
+  color: white;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.price_readmore {
+  background-color: rgb(23, 178, 23);
+  color: white;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
