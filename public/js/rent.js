@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 document.addEventListener('DOMContentLoaded', () => {
     var dropdown = document.getElementsByClassName('dropdown')
+    var list = document.getElementsByClassName('main_rents')
     var i
 
     for (i = 0; i < dropdown.length; i++) {
@@ -28,4 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
     bedroomSlider.addEventListener('input', function () {
         bedroomValue.innerHTML = this.value
     })
+
+    // for redirecting to single listing
+
+    for (i = 0; i < list.length; i++) {
+        list[i].addEventListener('click', function (e) {
+            let element = e.target
+            window.location.href = `../pages/listings/listing.html?id=1`
+            // console.log('redirectng to single listing' + element)
+        })
+    }
 })

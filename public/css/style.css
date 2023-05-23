@@ -294,7 +294,7 @@ button[type="submit"]:hover {
 /* 
 for advert  */
 
-.advert {
+.advert, .most_popular {
   display: flex;
   flex-direction: column;
   justify-content: center;

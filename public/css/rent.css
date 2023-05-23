@@ -308,13 +308,26 @@ input[type="range"]::-moz-range-thumb {
 
 .rent-details {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  ;
 }
 
 .rent-details p {
-  font-size: 15px;
+  font-size: 10px;
+}
+
+.rent_details_item_category {
+  color: var(--redColor);
+}
+
+.rent_details_item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 .price {
@@ -422,4 +435,13 @@ input[type="range"]::-moz-range-thumb {
   background-color: var(--greenColor);
   color: var(--whiteColor);
   border: none;
+}
+
+/* 
+.most_popular_header{
+
+} */
+
+.main_rents .rent-image img:hover, .price_rent p:hover {
+  cursor: pointer;
 }

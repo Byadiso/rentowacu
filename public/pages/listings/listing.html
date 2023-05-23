@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/rent.css" />
+        <title>Rentowacu.rw</title>
+        <link rel="icon" type="image/ico" href="../../image/bar-icon.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo-section">
+                <a href="../../index.html">
+                    <img src="../../image/Rentowacu_logo.png"
+                /></a>
+                <h1>Rentowacu</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="../tenant.html">Tenant</a>
+                        <ul>
+                            <li><a href="#">Search real estate</a></li>
+                            <li><a href="#">Create searchAgent</a></li>
+                            <li><a href="#">Frequently asked questions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../owner.html">Property Owner</a>
+                        <ul>
+                            <li><a href="#">Add an announcement</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../agent.html">Create a search agent</a>
+                    </li>
+                    <li>
+                        <a href="../my_profile.html">My profile</a>
+                    </li>
+                    <li>
+                        <a href="../logout.html">Log out</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="button-section">
+                <button>Add listing</button>
+                <button id="real_estate">Search real estate</button>
+                <button>EN</button>
+            </div>
+        </header>
+
+        <div class="search_rent">
+            <div class="location">
+                <p>
+                    <span>+ 28 119</span> houses for rent • Price comparison •
+                    Customer service 10.00-16.00
+                </p>
+            </div>
+            <div class="header_rent">
+                <div class="main_header">
+                    <div class="search-box">
+                        <p for="Location">Location</p>
+                        <input
+                            type="text"
+                            placeholder="Zip code, city or area..."
+                        />
+                    </div>
+                    <div class="dropdown type">
+                        <p>Type</p>
+                        <button class="dropbtn">All</button>
+                        <div class="dropdown-content">
+                            <a href="#">House</a>
+                            <a href="#">Apartment</a>
+                            <a href="#">Room</a>
+                            <a href="#">Student Apartment</a>
+                        </div>
+                    </div>
+                    <div class="total_rent_price">
+                        <label for="price-slider">Total rent</label>
+                        <input
+                            type="range"
+                            id="price-slider"
+                            name="price-slider"
+                            min="0 "
+                            max="210000"
+                            value="1000"
+                        />
+                        <div class="range_handle">
+                            <p class="initial">0 Frw</p>
+                            <p class="final">
+                                <span id="price-value"></span>Frw
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bedrooms">
+                        <label for="bedroom-slider">Bedrooms</label>
+                        <input
+                            type="range"
+                            id="bedroom-slider"
+                            name="bedroom-slider"
+                            min="1"
+                            max="8"
+                            value="8"
+                        />
+                        <div class="range_handle">
+                            <p class="initial_bed">0</p>
+                            <p class="final_bed">
+                                <span id="bedroom-value"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="create_search_agent">
+                    <p>
+                        SearchAgent - completely free: Receive emails when homes
+                        matching your requirements get listed
+                    </p>
+                    <input
+                        type="checkbox"
+                        name="createSearchAgent"
+                        id="checkboxAgent"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="main_title_header">
+            <div class="category">
+                <p>Rentowacu</p>
+                <p>/</p>
+                <p>Rentals</p>
+            </div>
+            <div class="total_rentals">
+                <p>Show 2742 results</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main_rents">
+                <div class="rent-image">
+                    <img src="../../image/lake kivu.jpg" style="width: 100%" />
+                    <h3 class="location_rent">Kicukiro</h3>
+                </div>
+                <div class="rent-details">
+                    <div class="rent_details_item">
+                        <i class="fa fa-bath"></i>
+                        <p class="rent_details_item_category">Bathrooms</p>
+                        <p>2</p>
+                    </div>
+                    <div class="rent_details_item">
+                        <i class="fa fa-bed"></i>
+                        <p class="rent_details_item_category">bedrooms</p>
+                        <p>2</p>
+                    </div>
+                    <div class="rent_details_item">
+                        <i class="fa fa-home"></i>
+                        <p class="rent_details_item_category">Type</p>
+                        <p>Apartment</p>
+                    </div>
+                </div>
+                <div class="price_rent">
+                    <p class="price_amount">1000 frw/mon</p>
+                    <p class="price_readmore">Read more</p>
+                </div>
+            </div>
+        </div>
+        <div class="load_more_button">
+            <button>Load more</button>
+        </div>
+
+        <div class="advert">
+            <div class="advert_header">
+                <h1>See other searches</h1>
+                <p>
+                    Expand your search and see available rentals in popular
+                    cities
+                </p>
+            </div>
+            <div class="advert_content"></div>
+        </div>
+
+        <div class="most_popular">
+            <div class="most_popular_header">
+                <h1>Most popular cities</h1>
+                <p>
+                    Expand your search and see available rentals in popular
+                    cities
+                </p>
+            </div>
+            <div class="most_popular_content"></div>
+        </div>
+
+        <div class="menu_footer">
+            <div class="menu_footer_content about_us">
+                <h4>About us</h4>
+                <ul>
+                    <li>Statute</li>
+                    <li>Blog</li>
+                    <li>buy premium profile</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="menu_footer_content for_tenants">
+                <h4>For tenants</h4>
+                <ul>
+                    <li>Search for property to rent</li>
+                    <li>Create a search agent</li>
+                    <li>Help :get answers to your questions here</li>
+                </ul>
+            </div>
+            <div class="menu_footer_content for_owners">
+                <h4>For landlords</h4>
+                <ul>
+                    <li>Create a real state ad</li>
+                    <li>Cooperation for rental portals</li>
+                    <li>Cooperation for landlords</li>
+                </ul>
+            </div>
+            <div class="menu_footer_content social_media">
+                <h4>Rentowacu</h4>
+                <ul>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                    <li>TikTok</li>
+                </ul>
+            </div>
+            <div class="menu_footer_content action_button">
+                <input type="button" class="search_button" value="search" />
+                <input type="button" class="language_button" value="KINYA" />
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>
+                &copy;<span class="current-year"> 2023</span>Designed by
+                Nganatech || Rentowacu.rw
+            </p>
+        </div>
+    </body>
+
+    <script src="../js/rent.js" defer></script>
+    <script>
+        // not showing if user is still logged in
+        let user = JSON.parse(localStorage.getItem('user'))
+        console.log(user)
+        if (user) {
+            window.location.href = '../pages/user.html'
+        }
+
+        // Real time footer
+
+        // code for slider image
+
+        var mainimg = document.querySelector('img')
+        var images = [
+            '../images/kigali.jpg',
+            '../images/kigali_serena.jpg',
+            '../images/lake kivu.jpg',
+        ]
+
+        var num = 0
+
+        function back() {
+            num--
+            if (num > 0) {
+                num = images.length - 1
+                mainimg.src = images[num]
+            } else {
+                mainimg.src = images[num]
+            }
+        }
+
+        function next() {
+            num++
+            if (num >= images.length) {
+                num = 0
+                mainimg.src = images[num]
+            } else {
+                mainimg.src = images[num]
+            }
+        }
+    </script>
+</html>
