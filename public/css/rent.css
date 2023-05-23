@@ -327,6 +327,7 @@ input[type="range"]::-moz-range-thumb {
 
 .location_rent {
   padding: 10px;
+  display: absolute;
   background-color: rgba(0, 0, 0, 0.783);
   color: #fff;
   font-size: 16px;
@@ -334,6 +335,8 @@ input[type="range"]::-moz-range-thumb {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
+
+
 }
 
 .rent-details {
@@ -467,11 +470,12 @@ input[type="range"]::-moz-range-thumb {
   border: none;
 }
 
-/* 
-.most_popular_header{
+.rent_image {
+  display: relative;
+  display: inline-block;
+}
 
-} */
 
-.main_rents .rent-image img:hover, .price_rent p:hover {
+.main_rents .rent_image img:hover, .price_rent p:hover {
   cursor: pointer;
 }
