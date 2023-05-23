@@ -1,0 +1,62 @@
+:root {
+  --blueColor: #1e90ff;
+  --whiteColor: #ffffff;
+  --spacing: 4px;
+  --redColor: #e14c4c;
+  --greenColor: green;
+  --greeyColor: rgb(166, 165, 165);
+  --greeyColorWhite: rgba(235, 235, 235, 0.991);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.my_profile_menu {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 15px;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 100px;
+}
+
+.my_profile_menu p {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--whiteColor);
+}
+
+.my_profile_menu p:hover {
+  cursor: pointer;
+}
+
+.profile_details {
+  background-color: var(--greeyColorWhite);
+}
+
+.header_profile {
+  /* background-color: var(--whiteColor); */
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px;
+}
+
+.content_profile {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 40px;
+
+}
