@@ -4,6 +4,7 @@
   --spacing: 4px;
   --redColor: #e14c4c;
   --greenColor: green;
+  --greeyColor: rgb(153, 152, 152);
 }
 
 
@@ -187,7 +188,7 @@ input[type="range"]::-moz-range-thumb {
 
 .create_search_agent {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   flex-direction: row;
   width: 100%;
@@ -195,8 +196,28 @@ input[type="range"]::-moz-range-thumb {
   color: var(--whiteColor);
 }
 
+/* .create_search_agent input {
+  justify-content: end;
+} */
+
+.agent_check {
+  background-color: #bff2f6dc;
+  width: 50px;
+  border-radius: 20px;
+  margin-left: 250px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(253, 254, 254);
+
+
+}
+
 .create_search_agent p, input {
-  padding-right: 250px;
+  padding-right: 200px;
 }
 
 .create_search_agent {
@@ -245,23 +266,32 @@ input[type="range"]::-moz-range-thumb {
 /* for main rent advert */
 .main_title_header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   padding-top: 100px;
+  margin-top: 20px;
 }
 
 .category {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: end;
   flex-direction: row;
 }
 
+.category p {
+  justify-content: start;
+  align-items: start;
+  padding-right: 10px;
+}
+
 .total_rentals {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: end;
+  color: var(--greeyColor);
+
 }
 
 
@@ -315,7 +345,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .rent-details p {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .rent_details_item_category {
