@@ -58,5 +58,12 @@
   justify-content: start;
   flex-direction: column;
   padding: 40px;
+}
 
+
+.tab-content:not(:first-child) {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
 }
