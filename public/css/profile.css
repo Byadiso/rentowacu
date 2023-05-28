@@ -20,6 +20,11 @@
   outline: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--blueColor);
+}
+
 .my_profile_menu {
   width: 100%;
   display: flex;
@@ -156,4 +161,50 @@
   /* margin-left: 200px; */
   border-radius: 5px;
   align-items: end;
+}
+
+.ads_header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.ads_menu {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: row;
+}
+
+.title_ads {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex-direction: row;
+}
+
+.ads_menu_acive {
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+}
+
+.ads_menu p {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.ads_menu_acive:hover {
+  background-color: var(--blueColor);
+}
+
+.ads_menu p:hover {
+  background-color: var(--greeyColorWhite);
+  cursor: pointer;
+}
+
+.ads_content {
+  display: flex;
+  justify-content: start;
 }
