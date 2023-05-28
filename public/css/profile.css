@@ -6,8 +6,8 @@
   --redDark: rgb(151, 27, 27);
   --redColorBG: rgba(243, 165, 165, 0.888);
   --greenColor: green;
-  --greeyColor: rgb(166, 165, 165);
-  --greeyColorWhite: rgba(235, 235, 235, 0.991);
+  --greeyColor: rgb(178, 177, 177);
+  --greeyColorWhite: rgba(218, 215, 215, 0.991);
 }
 
 
@@ -39,7 +39,6 @@ a {
 }
 
 .my_profile_menu p {
-  /* padding-left: 50px; */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -72,12 +71,12 @@ a {
 }
 
 .search_criteria_details {
-  border-top: 1px solid rgba(111, 102, 102, 0.653);
+  border-top: 1px solid var(--greeyColorWhite);
   width: 100%;
 }
 
 .content_profile_item {
-  border-bottom: 1px solid rgba(111, 102, 102, 0.653);
+  border-bottom: 1px solid var(--greeyColorWhite);
   padding: 10px;
   width: 100%;
 }
@@ -91,7 +90,7 @@ a {
 
 #profile_details {
   display: block;
-  background-color: white;
+  background-color: var(--whiteColor);
   padding: 50px;
   margin: 35px 60px;
   border-radius: 10px;
@@ -109,7 +108,7 @@ a {
 
 #ads_details {
   display: none;
-  background-color: white;
+  background-color: var(--whiteColor);
   padding: 50px;
   margin: 35px 60px;
   border-radius: 10px;
@@ -117,7 +116,7 @@ a {
 
 #inbox_details {
   display: none;
-  background-color: white;
+  background-color: var(--whiteColor);
   padding: 50px;
   margin: 40px 60px;
   border-radius: 10px;
@@ -161,17 +160,17 @@ a {
 
 .header_membership {
   padding: 20px;
+  border-bottom: 1px solid var(--greeyColorWhite);
 }
 
 .premium_button {
-  background-color: green;
-  color: white;
+  background-color: var(--greenColor);
+  color: var(--whiteColor);
   border: none;
   text-align: center;
   width: 150px;
   margin: 10px;
   padding: 10px;
-  /* margin-left: 200px; */
   border-radius: 5px;
   align-items: end;
 }
@@ -181,6 +180,8 @@ a {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+  border-bottom: 1px solid var(--greeyColorWhite);
+  width: 100%;
 }
 
 .ads_menu {

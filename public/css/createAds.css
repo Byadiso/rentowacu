@@ -1,0 +1,484 @@
+:root {
+    --blueColor: #1e90ff;
+    --whiteColor: #ffffff;
+    --spacing: 4px;
+    --redColor: #e14c4c;
+    --greenColor: green;
+    --greeyColor: rgb(153, 152, 152);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+.location {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-box input {
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+
+.header_rent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* padding: 5px 10px; */
+    font-size: 13px;
+}
+
+.main_header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 5px 10px;
+    padding-left: 20px;
+
+}
+
+.search-box p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* for range price */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--redColor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: var(--redColor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range_handle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.initial {
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.final {
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.total_rent_price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* for range bedroom */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--redColor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: var(--redColor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range_handle_bedroom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.initial_bed {
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.final_bed {
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.bedrooms {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.create_search_agent {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+}
+
+/* .create_search_agent input {
+  justify-content: end;
+} */
+
+.agent_check {
+    background-color: #bff2f6dc;
+    width: 50px;
+    border-radius: 20px;
+    margin-left: 250px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(253, 254, 254);
+
+
+}
+
+.create_search_agent p, input {
+    padding-right: 200px;
+}
+
+.create_search_agent {
+    padding: 10px;
+}
+
+
+/* for dropdown for type */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+    padding: 7px 60px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+
+
+/* for main rent advert */
+.main_title_header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 100px;
+    margin-top: 20px;
+}
+
+.category {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: row;
+}
+
+.category p {
+    justify-content: start;
+    align-items: start;
+    padding-right: 10px;
+}
+
+.total_rentals {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: var(--greeyColor);
+
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.main_rents {
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px
+}
+
+.main_rents h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.main_rents p {
+    margin-bottom: 0px;
+}
+
+.main_rents span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.location_rent {
+    padding: 10px;
+    display: absolute;
+    background-color: rgba(0, 0, 0, 0.783);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+
+
+}
+
+.rent-details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    ;
+}
+
+.rent-details p {
+    font-size: 14px;
+}
+
+.rent_details_item_category {
+    color: var(--redColor);
+}
+
+.rent_details_item {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.main_slider {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn button {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.btn button i {
+    font-size: 70px;
+}
+
+.btn button:hover i {
+    color: #95a5a6;
+}
+
+.rent_details p, span {
+    padding: 5px;
+
+}
+
+.price_rent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.price_amount {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.price_readmore {
+    background-color: rgb(23, 178, 23);
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.load_more_button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.load_more_button button {
+    /* display: flex;
+  justify-content: center; */
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-radius: 20px;
+    background-color: var(--greenColor);
+    color: var(--whiteColor);
+    border: none;
+}
+
+.rent_image {
+    display: relative;
+    display: inline-block;
+}
+
+
+.main_rents .rent_image img:hover, .price_rent p:hover {
+    cursor: pointer;
+}
