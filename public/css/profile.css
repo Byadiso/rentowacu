@@ -47,6 +47,7 @@
 
 .my_profile {
   background-color: var(--greeyColorWhite);
+  padding-bottom: 10px;
 }
 
 
@@ -155,11 +156,4 @@
   /* margin-left: 200px; */
   border-radius: 5px;
   align-items: end;
-}
-
-#ads_details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
