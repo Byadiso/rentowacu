@@ -506,6 +506,7 @@ for advert  */
 .menu_footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  align-items: start;
   gap: 10px;
   background-color: #052c47;
   color: white;

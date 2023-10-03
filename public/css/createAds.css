@@ -22,8 +22,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 50px;
+    padding: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 0px;
+    width: 100%;
     background-color: black;
     /* background-image: url('../image/Kigali_serena.jpg'); */
     color: white;
@@ -31,7 +34,57 @@
 }
 
 .add_ads {
-    margin: 50px;
+    margin: 0px;
+}
+
+/* /form style  */
+
+.form_ads {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+
+}
+
+.general_info_section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+
+.general_info_section div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* padding-right: 100px; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.title_and_description div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.form_ads input {
+    border: 1px solid var(--greeyColor);
+}
+
+.contact_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
