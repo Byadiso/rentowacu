@@ -47,8 +47,9 @@
 
 ### backend
 
--   Javascript
 -   Node js
+-   Express JS
+-   MongoDB
 
 ## Middleware
 
@@ -59,13 +60,13 @@
 ## API End Points
 
 -   GET /api/v1/properties \_Get all properties
--   POST/api/v1/properties \_Create expenses
+-   POST/api/v1/properties \_Create property
 -   PUT/api/v1/property \_Update property
 -   DELETE/api/v1/property \_Delete property
 -   GET /api/v1/users \_Get all users
--   POST/api/v1/income \_Create income
--   PUT/api/v1/income \_Update income
--   DELETE/api/v1/income \_Delete income
+-   POST/api/v1/cateogory \_Create cateogory
+-   PUT/api/v1/cateogory \_Update cateogory
+-   DELETE/api/v1/cateogory \_Delete cateogory
 
 -   POST/api/v1/auth/signup _User to signup_
 -   POST/api/v1/auth/signin _User to signin_
@@ -74,7 +75,7 @@
 
 Everything work perfect , However :
 
--   I am still working, different features are still in process
+-   I am still working on it, different features are still in process
 
 # Installation
 
