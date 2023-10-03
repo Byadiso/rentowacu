@@ -28,14 +28,11 @@ app.use((req, res, next) => {
 
 //db
 mongoose
-    .connect(
-        process.env.MONGODB_URI,
-        {
-            useNewUrlParser: true,
-            useCreateIndex: true,
-            useUnifiedTopology: true,
-        }
-    )
+    .connect(process.env.MONGODB_URI, {
+        useNewUrlParser: true,
+        useCreateIndex: true,
+        useUnifiedTopology: true,
+    })
     .then(() => console.log('DB Connected'))
     .catch((err) => {
         console.error(`Error connecting to  the database . \n${err}`)
