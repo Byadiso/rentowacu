@@ -92,11 +92,19 @@ header {
   top: 100%;
   left: 0;
   background-color: #ffffff;
-  padding: 0;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  /* margin: 10px; */
+  border: 1px solid var(--greeyColor);
 }
 
 .main-nav .dropdown:hover>ul {
   display: block;
+}
+
+.main-nav .dropdown>ul>li>a:hover {
+  cursor: pointer;
+  background-color: grey;
 }
 
 .button-section {
