@@ -1,3 +1,14 @@
+:root {
+  --blueColor: #1e90ff;
+  --whiteColor: #ffffff;
+  --spacing: 4px;
+  --redColor: #e14c4c;
+  --greenColor: green;
+  --greeyColor: rgb(153, 152, 152);
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -442,21 +453,23 @@ for advert  */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+  background-color: #fff;
 }
 
 .single_search {
   display: flex;
-  text-align: center;
+  text-align: start;
   justify-content: center;
   background-color: white;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 .single_search ul {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
+  background-color: #fff;
   align-items: start;
 }
 
