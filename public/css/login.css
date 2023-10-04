@@ -1,0 +1,104 @@
+:root {
+  --blueColor: #155697;
+  --whiteColor: #ffffff;
+  --spacing: 4px;
+  --redColor: #e14c4c;
+  --greenColor: green;
+  --greyColor: rgb(174, 173, 173);
+  --blackColor: rgb(22, 22, 22);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+
+}
+
+.login_form {
+  display: flex;
+  justify-content: center;
+  color: var(--blackColor);
+  flex-direction: column;
+  border: 1px solid var(--blueColor);
+  width: 50%;
+  border-radius: 5px;
+}
+
+.login_input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.login_input input {
+  border: 1px solid var(--greyColor);
+  border-radius: 5px;
+}
+
+.login_form div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.login_form .input_field {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.login_form .input_field input {
+  padding: 7px;
+}
+
+.header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.button_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button_login button {
+  border: none;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.button_login button:hover {
+  cursor: pointer;
+}
+
+.bottom_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blackColor);
+  flex-direction: row;
+  margin: 20px;
+
+}
+
+.bottom_login a {
+  text-decoration: none;
+  color: var(--blueColor);
+  padding: 10px;
+
+}
